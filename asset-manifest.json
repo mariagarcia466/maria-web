@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mariagarcia466/maria-web.git/static/css/main.f855e6bc.css",
-    "main.js": "/mariagarcia466/maria-web.git/static/js/main.a3a00aea.js",
-    "static/js/453.c7d08919.chunk.js": "/mariagarcia466/maria-web.git/static/js/453.c7d08919.chunk.js",
-    "index.html": "/mariagarcia466/maria-web.git/index.html",
-    "main.f855e6bc.css.map": "/mariagarcia466/maria-web.git/static/css/main.f855e6bc.css.map",
-    "main.a3a00aea.js.map": "/mariagarcia466/maria-web.git/static/js/main.a3a00aea.js.map",
-    "453.c7d08919.chunk.js.map": "/mariagarcia466/maria-web.git/static/js/453.c7d08919.chunk.js.map"
+    "main.css": "/maria-web/static/css/main.f855e6bc.css",
+    "main.js": "/maria-web/static/js/main.1b06d50d.js",
+    "static/js/453.c7d08919.chunk.js": "/maria-web/static/js/453.c7d08919.chunk.js",
+    "index.html": "/maria-web/index.html",
+    "main.f855e6bc.css.map": "/maria-web/static/css/main.f855e6bc.css.map",
+    "main.1b06d50d.js.map": "/maria-web/static/js/main.1b06d50d.js.map",
+    "453.c7d08919.chunk.js.map": "/maria-web/static/js/453.c7d08919.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a3a00aea.js"
+    "static/js/main.1b06d50d.js"
   ]
 }
