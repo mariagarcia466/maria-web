@@ -179,15 +179,16 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto; /* Center the content */
-  font-family: 'Arial', sans-serif;
-  color: #ff69b4; /* Professional dark gray text */
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50; /* Professional dark gray text */
   line-height: 1.6; /* Improve readability */
+  font-size: 1rem;
 }
 .projects-title {
   text-align: center;
   margin-top: 40px;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 3rem;
 }
 
 .project-cards {
@@ -256,4 +257,105 @@
   align-items: center;
   margin-top: 20px;
   flex-direction: column;
+}
+
+.passions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.philosophy-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.philosophy-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+.essay-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  font-family: 'times new roman', serif;
+  font-size: 1.2rem;
+}
+
+.pdf-embed {
+  margin: 1.5rem 0;
+  border: 1px solid #ddd;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.book-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book-info {
+  padding: 1rem 0;
+}
+
+.book-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.book-info p {
+  margin: 0.3rem 0 0;
+  color: #666;
+}
+
+.book-insight {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.questions-section {
+  margin-top: 3rem;
+}
+
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
 }

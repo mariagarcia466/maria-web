@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import { useState } from 'react';
 import edgeImage from './Edge16.jpg'; // import the image
 import westernengineering from './westernengineering.png'; // import the image
 import image from './image.png'; // import the image
@@ -189,8 +190,86 @@ function Projects() {
   );
 }
 
-function Passions() {
-  return <h1>My Passions</h1>;
+function Passions() {const [expandedBook, setExpandedBook] = useState(null);
+
+  const books = [
+    {
+      title: "Meditations",
+      author: "Marcus Aurelius",
+      cover: "https://m.media-amazon.com/images/I/71eJk7GtUOL._AC_UF1000,1000_QL80_.jpg",
+      insight: "Taught me to separate control from chaos"
+    },
+    {
+      title: "Gödel, Escher, Bach",
+      author: "Douglas Hofstadter",
+      cover: "https://m.media-amazon.com/images/I/71MvRl5opJL._AC_UF1000,1000_QL80_.jpg",
+      insight: "Broke my brain (in the best way)"
+    },
+    {
+      title: "Thus Spoke Zarathustra",
+      author: "Friedrich Nietzsche",
+      cover: "https://m.media-amazon.com/images/I/71JQ7wQTJtL._AC_UF1000,1000_QL80_.jpg",
+      insight: "Reimagined suffering as creative fuel"
+    }
+  ];
+
+  return (
+    <div className="passions-container">
+      {/* Hero Section with pink accent */}
+      <div className="philosophy-hero">
+        <h1>Philosophy</h1>
+        <p>When I'm not coding, I'm wrestling with ideas. Here's what fuels my mind.</p>
+      </div>
+ {/* Books Grid */}
+ <div className="books-section">
+        <h2 style={{ color: '#ff1493' }}>Books That Shaped Me</h2>
+        <div className="book-grid">
+          {books.map((book, index) => (
+            <div 
+              key={index}
+              className={`book-card ${expandedBook === index ? 'expanded' : ''}`}
+              onClick={() => setExpandedBook(expandedBook === index ? null : index)}
+              
+            >
+              <img src={book.cover} alt={book.title} />
+              <div className="book-info">
+                <h3>{book.title}</h3>
+                <p>{book.author}</p>
+                {expandedBook === index && (
+                  <div className="book-insight">
+                    <p>"{book.insight}"</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <h2 style={{ color: '#ff1493' }}>My Writings</h2>
+      <div className="essay-section">
+        <h2>Conference-Selected Essay: </h2>
+        <h2><em>"Echoes of Intersubjectivity in Frida Kahlo’s Tree of Hope, Remain Strong"</em></h2>
+        <p>This essay was nominated for the MAP (Minorities and Philosophy) annual conference, and it remains one of the pieces I’m most proud of. In it, I explore how Frida Kahlo’s Tree of Hope, Remain Strong artistically embodies the philosophical ideas of Frantz Fanon and Jean-Paul Sartre. Specifically, I look at how the painting reflects their claims about intersubjectivity—the way our identities are shaped by how others perceive us—and the resulting struggle to assert self-definition. If you're interested in the intersection of art, identity, and existential thought, this piece is for you.</p>
+        
+        <div className="pdf-embed">
+          <iframe 
+            src="https://drive.google.com/file/d/14eo-m8v8hZWcCJCTho-a2EqtzwcqS94K/preview" 
+            title="Philosophy Essay"
+            width="100%" 
+            height="500px"
+          />
+          <a 
+            href="https://drive.google.com/file/d/14eo-m8v8hZWcCJCTho-a2EqtzwcqS94K/view?usp=sharing" 
+            className="download-btn"
+            download
+          >
+            Download Full Essay
+          </a>
+        </div>
+      </div>
+
+    </div>
+  );
 }
 
 export default App;
