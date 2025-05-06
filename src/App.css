@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #ff69b4; /* Pink background */
+  padding: 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; /* Space between left and right sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-left {
+  font-size: 1.2rem;
+  font-weight: bold;
   color: white;
+  margin-right: 2rem; /* Add spacing between the left text and links */
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Space between navigation links */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #ff1493; /* Darker pink on hover */
+  text-decoration: underline;
+}
+
+
+
+.home {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  margin-top: 2rem;
+  padding: 0 1rem; /* Add padding for better spacing on smaller screens */
+  gap: 2rem; /* Space between the image, text, and buttons */
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row; /* Keep image and text side by side */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center items horizontally */
+  gap: 3rem; /* Space between the image and text */
+}
+
+.home-image{
+  width: 300px; /* Increased size */
+  height: 300px; /* Keep it square */
+  object-fit: cover; /* Ensure the image fits well */
+  margin-bottom: 1rem; /* Add spacing below the image */
+  border-radius: 50%; /* Keep it circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.eng {
+  width: 300px; /* Increased size */
+  height: 400px; /* Keep it square */
+  margin-bottom: 1rem; /* Add spacing below the image */
+  justify-content: right; 
+}
+
+.home-text {
+  max-width: 800px; /* Limit the width of the text */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Stack description and buttons vertically */
+  gap: 1.5rem; /* Add spacing between description and buttons */
+}
+
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff69b4; /* Matches the navbar color */
+}
+
+
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #555; /* Subtle gray for contrast */
+  margin-top: 0.1rem;
+}
+
+.home-description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333; /* Slightly darker gray for readability */
+  line-height: 1.6; /* Improve readability with better line spacing */
+  max-width: 800px; /* Limit width for better layout */
+  text-align: justify; /* Align text for a cleaner look */
+}
+
+.home-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.home-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.home-button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+}
+
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto; /* Center the content */
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Professional dark gray text */
+  line-height: 1.6; /* Improve readability */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff69b4; /* Matches the theme color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #555; /* Subtle gray for subtitles */
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify; /* Align text for a cleaner look */
+}
+
+.about-list {
+  list-style-type: disc; /* Use bullet points */
+  padding-left: 1.5rem; /* Indent the list */
+  font-size: 1rem;
+}
+
+.about-list li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+}
+
+.about-image-container {
+  display: flex;
+  flex-direction: row; /* Stack description and buttons vertically */
+  gap: 7rem; /* Add spacing between description and buttons */
+}
+
+.scotia {
+  width: 500; /* Increased size */
+  height: 50px; /* Keep it square */
+}
+
+.projects {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto; /* Center the content */
+  font-family: 'Arial', sans-serif;
+  color: #ff69b4; /* Professional dark gray text */
+  line-height: 1.6; /* Improve readability */
+}
+.projects-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h2 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1db954;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.spotify-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
 }
