@@ -139,7 +139,7 @@
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   color: #2c3e50; /* Professional dark gray text */
@@ -277,6 +277,7 @@
 .philosophy-hero {
   text-align: center;
   margin-bottom: 3rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .philosophy-hero h1 {

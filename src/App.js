@@ -12,6 +12,7 @@ import notes from './notes.png'; // import the image
 import belljar from './belljar.png'; // import the image
 import beingandnothingness from './beingandnothingness.png'; // import the image
 import ethics from './ethics.png'; // import the image
+import joy from './joy.png'; // import the image
 
 
 function App() {
@@ -211,13 +212,13 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
       title: "Twilight of the Idols",
       author: "Friedrich Nietzsche",
       cover: twilight,
-      insight: "Broke my brain (in the best way)"
+      insight: "Transformation requires destruction of the old self"
     },
     {
       title: "Notes from Underground",
       author: "Fyodor Dostoevsky",
       cover: notes,
-      insight: "Broke my brain (in the best way)"
+      insight: "Haunting exploration of the realest parts of the human psyche"
     },
     {
       title: "The Bell Jar",
@@ -229,13 +230,19 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
       title: "Being and Nothingness",
       author: "Jean-Paul Sartre",
       cover: beingandnothingness,
-      insight: "Reimagined suffering as creative fuel"
+      insight: "The book that hooked me on existentialist thought"
     },
     {
       title: "Ethics of Ambiguity",
       author: "Simone de Beauvoir",
       cover: ethics,
-      insight: "Reimagined suffering as creative fuel"
+      insight: "Being is freedom, and freedom is being. Ambiguity is the essence of existence."
+    },
+    {
+      title: "Joy of Living",
+      author: "Yongey Mingyur Rinpoche",
+      cover: joy,
+      insight: "Happiness is not something we need to find or achieve. It's something we are."
     }
   ];
 
@@ -272,7 +279,7 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
           ))}
         </div>
       </div>
-      <h2 style={{ color: '#ff1493' }}>My Writings</h2>
+      <h2 style={{ color: '#ff1493' }}>My Work</h2>
       <div className="essay-section">
         <h2>Conference-Selected Essay: </h2>
         <h2><em>"Echoes of Intersubjectivity in Frida Kahlo’s Tree of Hope, Remain Strong"</em></h2>
@@ -293,6 +300,28 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
             Download Full Essay
           </a>
         </div>
+      </div>
+      <div>
+      <h2 style={{ color: '#ff1493' }}>My Soundtracks for Stillness</h2>
+      <iframe
+          style={{ borderRadius: '12px' }}
+          src="https://open.spotify.com/embed/playlist/0N8KjCqMWKZz0FQX4O9PQu?utm_source=generator&theme=0"  
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe 
+        style={{borderRadius:"12px" }}
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6ziVCJnEm59?utm_source=generator&theme=0" 
+        width="100%" 
+        height="352" 
+        frameBorder="0"
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+        </iframe>
       </div>
 
     </div>
