@@ -2,7 +2,7 @@
   "name": "maria-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mariagarcia466/maria-web.git",
+  "homepage": "https://mariagarcia466.github.io/maria-web",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
