@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/maria-web/static/css/main.f855e6bc.css",
-    "main.js": "/maria-web/static/js/main.1b06d50d.js",
+    "main.css": "/maria-web/static/css/main.d163f96a.css",
+    "main.js": "/maria-web/static/js/main.55699c70.js",
     "static/js/453.c7d08919.chunk.js": "/maria-web/static/js/453.c7d08919.chunk.js",
+    "static/media/image.png": "/maria-web/static/media/image.a34922c3fa6d8aae231a.png",
+    "static/media/Edge16.jpg": "/maria-web/static/media/Edge16.fc75cba855e919b48fe6.jpg",
+    "static/media/scotia.png": "/maria-web/static/media/scotia.9b3cb40dfb170725517b.png",
+    "static/media/westernengineering.png": "/maria-web/static/media/westernengineering.de6a1a6d423876fb5677.png",
     "index.html": "/maria-web/index.html",
-    "main.f855e6bc.css.map": "/maria-web/static/css/main.f855e6bc.css.map",
-    "main.1b06d50d.js.map": "/maria-web/static/js/main.1b06d50d.js.map",
+    "main.d163f96a.css.map": "/maria-web/static/css/main.d163f96a.css.map",
+    "main.55699c70.js.map": "/maria-web/static/js/main.55699c70.js.map",
     "453.c7d08919.chunk.js.map": "/maria-web/static/js/453.c7d08919.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.1b06d50d.js"
+    "static/css/main.d163f96a.css",
+    "static/js/main.55699c70.js"
   ]
 }
