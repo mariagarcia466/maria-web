@@ -37,19 +37,24 @@
 
 .home {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center elements horizontally */
+  flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
-  padding: 0 1rem; /* Add padding for better spacing on smaller screens */
-  gap: 2rem; /* Space between the image, text, and buttons */
+  padding: 0 1rem;
+  gap: 2rem;
+  font-family: 'Playfair Display', serif;
+  height: 100%;
 }
 
 .home-content {
   display: flex;
-  flex-direction: row; /* Keep image and text side by side */
-  align-items: center; /* Vertically center the items */
-  justify-content: center; /* Center items horizontally */
-  gap: 3rem; /* Space between the image and text */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* Ensures content stacks on smaller screens */
+  min-height: 70vh; /* Ensures vertical centering effect */
+  text-align: left;
 }
 
 .home-image{
@@ -128,7 +133,7 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto; /* Center the content */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #333; /* Professional dark gray text */
   line-height: 1.6; /* Improve readability */
 }
@@ -136,7 +141,8 @@
 .about-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ff69b4; /* Matches the theme color */
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50; /* Professional dark gray text */
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -144,6 +150,7 @@
 .about-subtitle {
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: 'Playfair Display', serif;
   color: #555; /* Subtle gray for subtitles */
   margin-bottom: 1rem;
 }
@@ -151,6 +158,7 @@
 .about-description {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
   text-align: justify; /* Align text for a cleaner look */
 }
 

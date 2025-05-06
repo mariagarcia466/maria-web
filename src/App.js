@@ -6,6 +6,12 @@ import edgeImage from './Edge16.jpg'; // import the image
 import westernengineering from './westernengineering.png'; // import the image
 import image from './image.png'; // import the image
 import scotia from './scotia.png'; // import the image
+import whitenights from './whitenights.png'; // import the image
+import twilight from './twilight.png'; // import the image
+import notes from './notes.png'; // import the image
+import belljar from './belljar.png'; // import the image
+import beingandnothingness from './beingandnothingness.png'; // import the image
+import ethics from './ethics.png'; // import the image
 
 
 function App() {
@@ -18,8 +24,8 @@ function App() {
           </div>
           <div className="navbar-links">
             <Link to="/" className="nav-button">Home</Link>
-            <Link to="/about" className="nav-button">About</Link>
-            <Link to="/projects" className="nav-button">Projects</Link>
+            <Link to="/about" className="nav-button">About Me</Link>
+            <Link to="/projects" className="nav-button">Technical Projects</Link>
             <Link to="/passions" className="nav-button">Passions</Link>
           </div>
         </nav>
@@ -44,10 +50,12 @@ function Home() {
           <h1 className="home-title">Hello World, I'm Maria Paula.</h1>
           <p className="home-subtitle">Engineer | Reader | Meaning-Maker</p>
           <p className="home-description">
-            Welcome to my personal website! I am a passionate engineer with a love for reading and creating meaning in everything I do. Explore my projects, passions, and learn more about me. I work at the intersection of infrastructure, security, and systems thinking — building things that are reliable, scalable, and meaningful. 
-            I’m also someone who finds clarity in philosophy, complexity in literature, and joy in asking better questions. Whether I’m writing Terraform or reading Fanon, I care about how things work — and why they matter. 
-            Welcome to my space: part portfolio, part personal archive.
+            Welcome to my personal website, Bits & Being! 
           </p>
+            <p className="home-description"> I am a passionate engineer with a love for reading and creating meaning in everything I do. Explore my projects, passions, and learn more about me. I work at the intersection of infrastructure, security, and systems thinking — building things that are reliable, scalable, and meaningful. 
+            I’m also someone who finds clarity in philosophy, complexity in literature, and joy in asking better questions. Whether I’m writing code or reading Fanon, I care about how things work — and why they matter. 
+            </p>
+            <p className="home-description">Welcome to my space: part portfolio, part personal archive. I’m glad you’re here.</p>
           <div className="home-buttons">
         <Link to="/about" className="home-button">About Me</Link>
         <Link to="/projects" className="home-button">My Projects</Link>
@@ -194,21 +202,39 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
 
   const books = [
     {
-      title: "Meditations",
-      author: "Marcus Aurelius",
-      cover: "https://m.media-amazon.com/images/I/71eJk7GtUOL._AC_UF1000,1000_QL80_.jpg",
+      title: "White Nights",
+      author: "Fyodor Dostoevsky",
+      cover: whitenights,
       insight: "Taught me to separate control from chaos"
     },
     {
-      title: "Gödel, Escher, Bach",
-      author: "Douglas Hofstadter",
-      cover: "https://m.media-amazon.com/images/I/71MvRl5opJL._AC_UF1000,1000_QL80_.jpg",
+      title: "Twilight of the Idols",
+      author: "Friedrich Nietzsche",
+      cover: twilight,
       insight: "Broke my brain (in the best way)"
     },
     {
-      title: "Thus Spoke Zarathustra",
-      author: "Friedrich Nietzsche",
-      cover: "https://m.media-amazon.com/images/I/71JQ7wQTJtL._AC_UF1000,1000_QL80_.jpg",
+      title: "Notes from Underground",
+      author: "Fyodor Dostoevsky",
+      cover: notes,
+      insight: "Broke my brain (in the best way)"
+    },
+    {
+      title: "The Bell Jar",
+      author: "Sylvia Plath",
+      cover: belljar,
+      insight: "Reimagined suffering as creative fuel"
+    },
+    {
+      title: "Being and Nothingness",
+      author: "Jean-Paul Sartre",
+      cover: beingandnothingness,
+      insight: "Reimagined suffering as creative fuel"
+    },
+    {
+      title: "Ethics of Ambiguity",
+      author: "Simone de Beauvoir",
+      cover: ethics,
       insight: "Reimagined suffering as creative fuel"
     }
   ];
@@ -220,9 +246,10 @@ function Passions() {const [expandedBook, setExpandedBook] = useState(null);
         <h1>Philosophy</h1>
         <p>When I'm not coding, I'm wrestling with ideas. Here's what fuels my mind.</p>
       </div>
+
  {/* Books Grid */}
  <div className="books-section">
-        <h2 style={{ color: '#ff1493' }}>Books That Shaped Me</h2>
+        <h2 style={{ color: '#ff1493' }}>Novels That Shaped Me</h2>
         <div className="book-grid">
           {books.map((book, index) => (
             <div 
