@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/maria-web/static/css/main.d163f96a.css",
-    "main.js": "/maria-web/static/js/main.55699c70.js",
+    "main.css": "/maria-web/static/css/main.8afd7b69.css",
+    "main.js": "/maria-web/static/js/main.0b9ad3a5.js",
     "static/js/453.c7d08919.chunk.js": "/maria-web/static/js/453.c7d08919.chunk.js",
     "static/media/image.png": "/maria-web/static/media/image.a34922c3fa6d8aae231a.png",
+    "static/media/twilight.png": "/maria-web/static/media/twilight.d4c01b07f823d6b2bcc3.png",
     "static/media/Edge16.jpg": "/maria-web/static/media/Edge16.fc75cba855e919b48fe6.jpg",
+    "static/media/notes.png": "/maria-web/static/media/notes.968d9c22adad322652ad.png",
+    "static/media/beingandnothingness.png": "/maria-web/static/media/beingandnothingness.c505a8e8a58817f1b371.png",
+    "static/media/whitenights.png": "/maria-web/static/media/whitenights.d6aacc8615ed5406d02b.png",
+    "static/media/belljar.png": "/maria-web/static/media/belljar.1d0c5c11af55fc3e0dcb.png",
+    "static/media/ethics.png": "/maria-web/static/media/ethics.f5d2d6a44ce0a226f391.png",
     "static/media/scotia.png": "/maria-web/static/media/scotia.9b3cb40dfb170725517b.png",
     "static/media/westernengineering.png": "/maria-web/static/media/westernengineering.de6a1a6d423876fb5677.png",
     "index.html": "/maria-web/index.html",
-    "main.d163f96a.css.map": "/maria-web/static/css/main.d163f96a.css.map",
-    "main.55699c70.js.map": "/maria-web/static/js/main.55699c70.js.map",
+    "main.8afd7b69.css.map": "/maria-web/static/css/main.8afd7b69.css.map",
+    "main.0b9ad3a5.js.map": "/maria-web/static/js/main.0b9ad3a5.js.map",
     "453.c7d08919.chunk.js.map": "/maria-web/static/js/453.c7d08919.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d163f96a.css",
-    "static/js/main.55699c70.js"
+    "static/css/main.8afd7b69.css",
+    "static/js/main.0b9ad3a5.js"
   ]
 }
